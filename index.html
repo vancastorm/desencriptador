@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <title>encriptador de texto</title>
+</head>
+    <body>
+        <div class="container">
+    
+
+            <div class="texto1">
+
+                 <textarea name="text" class="textoaencriptar" id="textoEncriptado"  placeholder="Ingresa tu texto aquí"></textarea> 
+
+                        <div class="texto2"> <textarea name="resultado" class="respuesta" id="textoDesencriptado"></textarea>
+                        <img class= "imagen" src="image/lupa.png" id="lupa" alt="poner el muñequito aca">
+                    <div class="terminos">
+                        <P>Solo letras Mayusculas y sin acentos </P>
+                    </div>
+
+                    <div class= "botones">
+
+                         <button class= btn-encriptar type="button" id="botonEncriptado">Encriptar</button>
+                         <button class= btn-desencriptar type="button" id="botonDesencriptado">Desencriptar</button>
+                         <button class= btn-copiar type="button" id="botonCopiar">Copiar</button>
+                    </div>
+                    <div class = "notexto"> 
+                        <h1 id="titulo-mensaje" class="advertencia">Ningún mensaje fue encontrado</h1>
+                        <p id="parrafo" class="entrada">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+        
+                    </div>   
+
+               
+                 
+            </div>
+        </div>
+
+
+    </body>
+            <script>
+            var btn = document.querySelector("#botonEncriptado");
+            btn.onclick = encriptar;
+            var btn2 = document.querySelector("#botonDesencriptado");
+             btn2.onclick = desencriptar;
+            var btn3 = document.querySelector("#botonCopiar");
+             btn3.onclick = copiar;
+
+             </script>
+</html>
